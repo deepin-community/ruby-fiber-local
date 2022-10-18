@@ -1,0 +1,26 @@
+Source: ruby-fiber-local
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Team <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Hideki Yamane <henrich@debian.org>
+Build-Depends: debhelper-compat (= 13),
+               gem2deb (>= 1)
+Standards-Version: 4.5.0
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-fiber-local.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-fiber-local
+Homepage: https://github.com/socketry/fiber-local
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+Rules-Requires-Root: no
+
+Package: ruby-fiber-local
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${misc:Depends},
+         ${ruby:Depends},
+         ${shlibs:Depends}
+Description: Provides a class-level mixin to make fiber local state easy
+ A module to simplify fiber-local state.
+ .
+  - Easily access fiber-local state from a fiber.
+  - Default to shared thread-local state.

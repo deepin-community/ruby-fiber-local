@@ -1,0 +1,12 @@
+ruby-fiber-local (1.0.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Source-only reupload to comply with testing migration policy
+
+ -- Cédric Boutillier <boutil@debian.org>  Mon, 25 Jan 2021 12:24:24 +0100
+
+ruby-fiber-local (1.0.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #973606)
+
+ -- Hideki Yamane <henrich@debian.org>  Tue, 03 Nov 2020 22:42:02 +0900
